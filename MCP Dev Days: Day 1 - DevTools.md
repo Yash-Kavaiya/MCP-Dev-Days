@@ -27,4 +27,206 @@
 <img width="685" height="393" alt="image" src="https://github.com/user-attachments/assets/596e57c4-6899-469e-b5d0-70c28171ac83" />
 
 <img width="646" height="386" alt="image" src="https://github.com/user-attachments/assets/171c6949-3348-4b89-94df-7940ac326b2a" />
+<img width="669" height="397" alt="image" src="https://github.com/user-attachments/assets/abc03cb1-af27-4247-a64c-8d712a7c2c84" />
+<img width="699" height="396" alt="image" src="https://github.com/user-attachments/assets/617f4942-1b1b-4b99-8c1c-57d1c63884ef" />
 
+<img width="818" height="461" alt="image" src="https://github.com/user-attachments/assets/110d2975-1139-4022-b7d1-3c8f76c48733" />
+
+<img width="818" height="461" alt="image" src="https://github.com/user-attachments/assets/c5b1a49f-48db-45b1-916b-60086472be99" />
+<img width="822" height="460" alt="image" src="https://github.com/user-attachments/assets/5a80c774-a600-45a1-b151-757ab038c8d3" />
+<img width="810" height="459" alt="image" src="https://github.com/user-attachments/assets/47f227dd-27a2-4a29-9912-6d6f3aad786a" />
+<img width="809" height="456" alt="image" src="https://github.com/user-attachments/assets/d1be13c3-68c8-403d-9824-c7421f8f6543" />
+<img width="822" height="468" alt="image" src="https://github.com/user-attachments/assets/3df648b7-596c-43b6-97b2-f3fd86b4ee69" />
+<img width="769" height="460" alt="image" src="https://github.com/user-attachments/assets/514faf2d-ae1d-4373-bfdf-81758137e154" />
+
+<img width="810" height="458" alt="image" src="https://github.com/user-attachments/assets/e4fb40fe-5143-4138-8e8f-5d0a9a2c842c" />
+This appears to be Anthropic's presentation on MCP, providing their perspective on the protocol's strategic importance and roadmap. Here are the key insights:
+
+## **Historical Context & Strategic Positioning**
+Anthropic positions MCP alongside major protocol adoptions in tech history - REST, OAuth, and LSP (Language Server Protocol). The timeline shows MCP as the natural evolution for the AI era, following the same adoption pattern where tech giants embrace standards that solve fundamental integration problems.
+
+## **Deep Microsoft Partnership**
+The collaboration goes beyond just Windows integration, with specific joint projects including:
+- **OAuth Implementation** - Enterprise authentication standards
+- **Registry Co-Leadership** - Shared governance of the community registry  
+- **Client Applications** - Cross-platform MCP-enabled apps
+- **C# SDK** - Native Windows development support
+- **Agent-to-Agent** communication protocols
+- **GitHub MCP Server** - Developer workflow integration
+
+## **MCP Roadmap (Current: v0.6.18)**
+Anthropic's roadmap shows three key focus areas:
+
+### **Agents** (Current)
+- Bidirectional server communication
+- Structured tool outputs with JSON schemas
+- Resource links and context passing
+
+### **Security** (Next Priority)  
+- OAuth 2.1 bearer server support
+- Async operations for long-running tasks
+- Guides and best practices for developers
+- Enterprise managed authorization
+
+### **Protocol Evolution**
+- Mandatory version negotiation
+- MCP registry for centralized discovery
+- Validation tools and streaming support
+
+## **Production Considerations**
+Anthropic emphasizes the distinction between:
+- **Internal use** - Focus on developer velocity, deployment flexibility
+- **External use** - API best practices, security, parameter validation
+
+## **Authoring Patterns Decision Matrix**
+The framework helps developers choose the right MCP architecture based on control requirements:
+- **1st party control** recommended for prompting
+- Challenges vary from "tool sprawl" to "don't control the tool definitions"
+
+## **Developer Engagement**
+Three main entry points:
+- **Documentation**: `modelcontextprotocol.io/docs/getting-started/intro`
+- **GitHub**: `github.com/modelcontextprotocol` 
+- **Claude Connectors Registry**: `anthropic.com/partners/mcp`
+
+This positions MCP not just as a technical protocol, but as foundational infrastructure for the AI application ecosystem - with Anthropic and Microsoft as key stewards driving enterprise adoption.
+
+<img width="741" height="414" alt="image" src="https://github.com/user-attachments/assets/65f2b740-38b7-46fd-b2c3-e11e6c3f4532" />
+<img width="752" height="418" alt="image" src="https://github.com/user-attachments/assets/224171c8-0790-45fc-9e04-ee061e443db9" />
+<img width="751" height="420" alt="image" src="https://github.com/user-attachments/assets/4d65665f-a861-4b7f-b4e9-3e109d20b070" />
+<img width="750" height="423" alt="image" src="https://github.com/user-attachments/assets/5c866f63-05da-4f25-b417-4969863cb0e8" />
+<img width="751" height="427" alt="image" src="https://github.com/user-attachments/assets/dc260444-6651-4453-8638-d0474e473931" />
+<img width="752" height="416" alt="image" src="https://github.com/user-attachments/assets/72c08f06-18d3-4541-ab04-7886f72373f1" />
+<img width="640" height="402" alt="image" src="https://github.com/user-attachments/assets/b10633e5-8d46-45c5-9018-04f871e9a445" />
+<img width="751" height="418" alt="image" src="https://github.com/user-attachments/assets/5febb367-3930-4142-95c0-d5ac12c05723" />
+<img width="739" height="424" alt="image" src="https://github.com/user-attachments/assets/9108aab8-327b-472a-8773-6730c9703df7" />
+<img width="752" height="415" alt="image" src="https://github.com/user-attachments/assets/d240c1eb-8190-475f-9387-9086f785bf3e" />
+<img width="735" height="416" alt="image" src="https://github.com/user-attachments/assets/999e46d9-4beb-435c-946e-6b379f45864d" />
+<img width="750" height="412" alt="image" src="https://github.com/user-attachments/assets/1977afb4-8201-4a38-bce6-cf80e9250567" />
+<img width="749" height="429" alt="image" src="https://github.com/user-attachments/assets/78cf82bf-cbf0-4008-93b9-5b6d056daad2" />
+<img width="759" height="420" alt="image" src="https://github.com/user-attachments/assets/04aeea60-bba0-4379-964a-122a2497c640" />
+<img width="823" height="471" alt="image" src="https://github.com/user-attachments/assets/e4044303-7821-4606-87dc-dd2c88e17554" />
+This is a detailed technical presentation about the **MCP Community Registry** design, focusing on solving the server discovery problem. Here are the key insights:
+
+## **Registry Leadership**
+The project is being co-led by:
+- **Tadas Antanavicius** (PulseMCP) - creator of one of the earliest MCP server directories
+- **Toby Padilla** (GitHub) - maintainer of the most popular MCP server to-date
+
+## **Core Problems Being Solved**
+
+### **1. Fragmented Discovery**
+Third-party registries can't maintain comprehensive server lists due to:
+- Nested mono-repos
+- Distributed hosting (GitHub, GitLab, etc.)
+- Complex web scraping requirements
+- Many edge cases
+
+### **2. Metadata Management Burden** 
+Server maintainers currently have to manually update descriptions across multiple platforms (GitHub, Smithery, Pulse, etc.)
+
+### **3. Installation Instruction Chaos**
+Client apps (VS Code, Goose, Cline) currently rely on "unreliably parsing READMes" for installation instructions, creating a poor developer experience.
+
+## **Architectural Solution**
+
+### **Publisher Workflow**
+- Server maintainers use a simple CLI: `mcpr publish ./server.json`
+- Single source of truth for server metadata
+- Eliminates multi-platform metadata maintenance
+
+### **Consumer Architecture** 
+- Central registry at `registry.modelcontextprotocol.to`
+- **ETL layer** between official registry and client implementations
+- Each client (VS Code, Raycast, Goose) pulls and transforms data as needed
+
+## **Scope Boundaries**
+They're being strategic about what they **won't** solve:
+- **Source code storage** → Delegated to npm, PyPI, Docker Hub
+- **Advanced search/filtering** → Delegated to MCP client marketplaces
+- Only basic search by name will be supported initially
+
+## **Schema Development**
+Working on four complementary schemas:
+- **Base Registry OpenAPI Schema** (reading server data)
+- **Base server.json Schema** (publishing server data)  
+- **Community Registry schemas** (adding constraints to both)
+
+## **Call for Community Input**
+The team is actively seeking:
+1. **Documentation review** 
+2. **Issue identification** on GitHub
+3. **Pull request contributions**
+
+This represents a thoughtful, scoped approach to solving MCP's discovery problem while building sustainable community governance. The emphasis on schemas and ETL layers suggests they're planning for long-term ecosystem growth with multiple client implementations.
+
+
+https://github.com/nlweb-ai/NLWeb
+
+<img width="693" height="392" alt="image" src="https://github.com/user-attachments/assets/778b9a99-0cf9-4b58-a968-a668fc64f6f3" />
+
+<img width="703" height="395" alt="image" src="https://github.com/user-attachments/assets/7a548d59-bd87-4fac-8e5c-2325b654a2e3" />
+<img width="701" height="404" alt="image" src="https://github.com/user-attachments/assets/320dde71-0179-4361-9d64-259f5ce262a4" />
+<img width="706" height="403" alt="image" src="https://github.com/user-attachments/assets/4a2c5256-6be2-4799-9d1c-c6399cfb01c8" />
+<img width="703" height="385" alt="image" src="https://github.com/user-attachments/assets/d901cd26-3937-467f-80b7-c8e226a0af28" />
+<img width="694" height="393" alt="image" src="https://github.com/user-attachments/assets/cdd71db2-16b4-4dd9-bfa1-b5e30963cd6c" />
+<img width="714" height="393" alt="image" src="https://github.com/user-attachments/assets/4808f0f0-d665-4f8f-887e-bf89ab42b5ff" />
+<img width="701" height="393" alt="image" src="https://github.com/user-attachments/assets/2882131c-b984-4be3-b8b0-d71eb4b2788c" />
+<img width="699" height="400" alt="image" src="https://github.com/user-attachments/assets/5cbf7d2c-03e1-42e5-ac15-059d21abe0c4" />
+<img width="697" height="383" alt="image" src="https://github.com/user-attachments/assets/9f2b2012-9211-44d1-945d-48232465c5d2" />
+<img width="701" height="394" alt="image" src="https://github.com/user-attachments/assets/afa1ddca-1629-4ed4-815b-92528fd60d10" />
+<img width="699" height="399" alt="image" src="https://github.com/user-attachments/assets/b902c84f-ad8c-455c-beb3-6fb0cea0e622" />
+<img width="697" height="394" alt="image" src="https://github.com/user-attachments/assets/c995fc82-7970-45b6-b7a5-d13e0ee36c66" />
+<img width="697" height="388" alt="image" src="https://github.com/user-attachments/assets/86f9dec7-0cae-4834-97cc-e439d9039d43" />
+<img width="699" height="381" alt="image" src="https://github.com/user-attachments/assets/48f0429e-413d-449e-8e64-7e53c65c55ab" />
+This is **Kent Dodds'** (@kentcdodds) presentation on **"The Future of User Interaction"** - a compelling vision of how MCP enables true AI assistants. Here are the key insights:
+
+## **The J.A.R.V.I.S. Vision**
+Kent positions MCP as the foundation for creating **"Just A Rather Very Intelligent System"** - referencing Tony Stark's AI assistant that can interact with any system or device seamlessly.
+
+## **The Paradigm Shift**
+**Today**: Browsers → Websites  
+**Future**: "Jarvis" Clients → MCP Services
+
+This represents a fundamental change from humans navigating web interfaces to AI agents acting on our behalf through standardized protocols.
+
+## **Why Don't We Already Have Jarvis?**
+Despite existing AI assistants (Google Assistant, Siri, Alexa, etc.), we're missing true general-purpose AI assistants. The answer: **Integrations**.
+
+Current assistants are limited to pre-built integrations, but MCP solves this by enabling connections to virtually any service.
+
+## **The Three-Phase Evolution**
+
+### **Phase 1: Basic LLM**
+- Answers questions 🤓
+- "Can't do anything" 😞
+
+### **Phase 2: LLM + Tools** 
+- Direct tool connections
+- Still limited scope
+
+### **Phase 3: LLM + MCP**
+- "Can do ANYTHING" 🤩
+- Universal service connectivity through standardized protocol
+
+## **MCP Architecture**
+The architecture diagram shows the power of MCP:
+- **Single Host Application** (with LLM)
+- **Multiple MCP Clients** (protocol adapters)
+- **Multiple MCP Servers** (service providers)
+- **Unlimited Tools** (actual service capabilities)
+
+## **Universal Integration**
+The slide showing dozens of company logos (GitHub, Spotify, Netflix, Tesla, Starbucks, etc.) illustrates MCP's potential to connect to any service that implements the protocol.
+
+## **MCP-UI Project**
+Kent also highlights **mcpui.dev** - "Interactive UI Components for MCP" - suggesting the ecosystem is building rich, dynamic interfaces for MCP applications, not just command-line tools.
+
+## **Content Resources**
+Points to **EpicAI.pro/posts** for extensive MCP content including:
+- Game-changing potential of MCP
+- User interface evolution
+- Tool integration strategies
+- Search engine capabilities
+
+This presentation positions MCP as the missing piece that will finally enable the sci-fi vision of AI assistants that can seamlessly interact with our entire digital ecosystem.
