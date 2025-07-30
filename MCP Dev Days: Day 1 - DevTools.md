@@ -335,7 +335,7 @@ client.AddTools(tools);
 <img width="646" height="386" alt="image" src="https://github.com/user-attachments/assets/171c6949-3348-4b89-94df-7940ac326b2a" />
 <img width="669" height="397" alt="image" src="https://github.com/user-attachments/assets/abc03cb1-af27-4247-a64c-8d712a7c2c84" />
 <img width="699" height="396" alt="image" src="https://github.com/user-attachments/assets/617f4942-1b1b-4b99-8c1c-57d1c63884ef" />
-
+## b
 <img width="818" height="461" alt="image" src="https://github.com/user-attachments/assets/110d2975-1139-4022-b7d1-3c8f76c48733" />
 
 <img width="818" height="461" alt="image" src="https://github.com/user-attachments/assets/c5b1a49f-48db-45b1-916b-60086472be99" />
