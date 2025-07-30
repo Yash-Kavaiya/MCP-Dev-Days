@@ -1,4 +1,310 @@
 # MCP Dev Days: Day 1 - DevTools
+
+Full Live Stream Video :- https://www.youtube.com/live/8-okWLAUI3Q?si=l1Y4OwgZklLgceiy
+
+Time	Title	Abstract	Speaker
+9:00am PST	Day 1 Keynote: Building the Future of AI Development Together	Join Jay Parikh, Microsoft EVP of Core AI, as he opens MCP DevDays with an exciting look at how the Model Context Protocol is revolutionizing AI application development. Discover why Microsoft is all-in on MCP and how it's accelerating developer productivity across VS Code, GitHub Copilot, Azure AI Foundry, and Windows. This keynote features lightning demos showcasing real-world MCP implementations. Whether you're a developer, tool builder, or AI enthusiast, this session sets the stage for two days of hands-on learning about the protocol that's defining the next generation of intelligent	James Montemagno, Jay Parikh, Linda Li, Drew Hodun, Burke Holland, Donald Thompson
+9:30am PST	MCP Power-User Mode: Revealing Every MCP Feature in VS Code	Think you’ve seen what Model Context Protocol can do inside Visual Studio Code? Think again. In this rapid-fire tour, we’ll flip every switch and surface every hidden gem. Expect zero slides and maximum keyboard: a full-throttle demo that leaves you with the shortcuts, settings, and insider tips to make VS Code the ultimate MCP-powered workbench.	Liam Hampton
+10:00am PST	Discoverability Unlocked: Publishing and Finding servers in the MCP Community Registry	Lets take a sneak peak into the open-source MCP community registry. A publish once, consume anywhere project for Model Context Protocol servers being developed by the MCP steering committee. In this 30 minute session we'll talk to the project leaders and unpack how server authors can publish their servers and how different registries and marketplaces can stay up to date with the latest MCP servers.	Toby Padilla, Tadas Antanavicius
+10:30am PST	Chat With the Web: Inside NLWeb’s Journey to a Conversational Internet	What if every website could talk back—understanding a visitor’s plain-English question and answering with the exact insight (or next action) they need? In this fireside conversation, Ramanathan Guha— web-standards pioneer (RSS, Schema.org) and the creator of NLWeb—joins core engineers from the project to explain how Microsoft’s new open initiative is turning that vision into reality and how MCP falls into the big picture.	Ramanathan Guha, Jennifer Marsman, Chelsea Carter, James Montemagno
+11:00am PST	The Future of User Interaction	We are entering a new era of user interaction. It's being built right before our very eyes and changing rapidly. As crazy as it sounds, soon each one of us will get our own Jarvis capable of performing actually useful tasks for us with a completely different user interaction mechanism than we're used to. But someone's gotta give Jarvis the tools to perform these tasks, and that's where we come in In this talk, Kent will show how this AI assistant user interaction model is shaping out to be, help us catch the vision of what this future could look like, and our role in it.	Kent C. Dodds
+11:30am PST	MCP Gets OAuth: Understanding the New Authorization Specification	The Model Context Protocol now fully embraces OAuth 2.1 conventions, bringing mature authorization patterns to AI agent ecosystems. Rather than inventing new auth mechanisms, MCP adopted proven OAuth flows, dynamic client registration, as well as the brand-new Protected Resource Metadata conventions. This session explores how the new spec significantly simplifies the developer experience for both MCP client and server implementers, as well as gives developers more flexibility around integration with existing authorization servers.	Den Delimarsky, Aaron Parecki
+12:00pm PST	MCP Workflow: I stopped using SQL for database management	Let's learn how to create and update database schemas using just prompts with GitHub Copilot in VS Code. You will see an example of using GibsonAI MCP together with GitHub MCP Servers to create GitHub pull requests with auto-generated model classes in any programming language.	Bobur Umorzokov
+12:30am PST	Boost your productivity with Visual Studio & MCP Servers	Visual Studio now speaks MCP. In this fast-paced session you’ll learn how the IDE’s new Model Context Protocol tooling turns agent-ready APIs into a first-class experience	Allie Barry
+
+## Day 1 Keynote: Building the Future of AI Development Together
+
+# MCP Dev Days - Conference Notes
+
+## Event Overview
+**MCP Dev Days** - A 2-day conference focused on the Model Context Protocol (MCP) and its applications in AI development.
+
+---
+
+## Opening Keynote - Microsoft Leadership
+
+### Jay (Microsoft) - Opening Remarks
+- MCP is fundamental to Microsoft's vision for AI development
+- Accelerates agentic workflows faster than previous solutions
+- Collaboration through MCP Steering Committee with:
+  - Anthropic
+  - OpenAI
+  - Octo
+  - AWS
+
+### Key Microsoft Investments
+- Deep integration with **GitHub Copilot**
+- **Agent Factory Foundry** for enterprise AI
+- **OAuth support** for secure remote servers
+- Evolving MCP with Anthropic and community
+
+---
+
+## Technical Deep Dive - MCP Fundamentals
+
+### James Montagna (Microsoft Program Manager)
+
+#### What is MCP?
+- **Model Context Protocol** - provides context to models
+- Universal adapter for AI applications
+- Connects LLMs with data, tools, and resources
+- Eliminates need for multiple custom connections
+
+#### MCP Architecture Components
+
+1. **Host** - AI application (e.g., VS Code) that coordinates MCP clients
+2. **Clients** - Components maintaining connections to MCP servers
+3. **Servers** - Lightweight applications (local/remote) providing context
+
+#### MCP Server Capabilities
+
+**Tools**
+- Functions the agent can invoke
+- Examples: Playwright automation, database queries, GitHub operations
+
+**Resources**
+- Automatic context attachment (API responses, files, screenshots)
+- Eliminates multiple manual requests
+
+**Prompts**
+- Bidirectional prompts from MCP servers
+- Can request information and apply it automatically
+
+---
+
+## Live Demo - VS Code Integration
+
+### Burke Holland (Microsoft) - VS Code Demo
+
+#### Setup Process
+1. **Extensions Tab** → MCP Servers section
+2. **Curated List** of top-tier MCP servers available
+3. **One-click Installation** directly in VS Code
+4. **JSON Configuration** managed automatically in background
+
+#### Demo Highlights
+
+**GitHub MCP Server Integration**
+- OAuth authentication flow
+- Natural language GitHub operations:
+  - Search repositories
+  - Fork repositories  
+  - Create issues
+  - Assign to Copilot
+
+**Playwright MCP Server**
+- End-to-end testing automation
+- Debug web applications using natural language
+- Automatic browser interaction and analysis
+
+**Tool Management**
+- Configure which tools are active
+- **Auto-approve** setting for seamless workflow
+- Context addition via MCP resources
+
+#### Key Features Demonstrated
+- **Seamless OAuth** integration
+- **Cross-platform functionality** (local + cloud agents)
+- **Resource attachment** without manual downloads
+- **Automatic issue creation** from debugging sessions
+
+---
+
+## Azure AI Foundry Integration
+
+### Linda (Azure AI Foundry Product Manager)
+
+#### Agent Service + MCP Integration
+- **Flexible platform** for building, deploying, managing AI agents
+- **Autonomous operation** with human oversight
+- **Direct MCP server tool calling**
+
+#### Demo: Git MCP Documentation Server
+```python
+# Sample Python SDK usage
+project = create_project()
+mcp_tool = create_mcp_tool(
+    server_label="docs_server",
+    server_url="<server_url>"
+)
+agent = create_agent(
+    model=model,
+    name=name,
+    instructions=instructions,
+    tools=[mcp_tool]
+)
+```
+
+#### Key Features
+- **Approval workflows** for tool execution
+- **Step-by-step tracing** and observability
+- **Azure REST API documentation** integration
+- **SDK integration** for easy deployment
+
+---
+
+## Windows MCP Integration
+
+### Donald Thompson (Distinguished Engineer, Windows Platform)
+
+#### Agentic OS Vision
+- **Native MCP support** in Windows OS
+- Solving configuration and security challenges
+- **Enterprise-grade safety** mechanisms
+
+#### Three Core Components
+
+**1. MCP Registry**
+- User installation and registration of MCP services
+- **Secure API key management**
+- **Permission and provisioning** systems
+```csharp
+// Windows SDK example
+var servers = await registry.EnumerateServersAsync();
+var tools = await server.GetToolsAsync();
+var client = new OpenAIClient();
+client.AddTools(tools);
+```
+
+**2. Windows MCP Servers**
+- **Cryptographically signed** applications
+- **Isolation containers** for security
+- **Controlled access** to file system and network
+
+**3. First-Party Windows Servers**
+- **App Actions** support
+- **Windows Subsystem for Linux** integration
+- **Settings management**
+- **File system interaction** with semantic search
+
+#### Partner Demo: Perplexity + SparkMail
+- **Integrated registry** access
+- **Cross-application workflows**
+- **Automatic email composition** from search results
+
+---
+
+## Community Registry & Ecosystem
+
+### Microsoft Registry Initiatives
+- **Official MCP Community Registry** (partnered with Anthropic)
+- **GitHub-based** open development
+- **Multi-platform support** (GitHub, VS Code, Windows)
+- **Azure API Center** for enterprise private registries
+
+### Resources for Getting Started
+- **Beginner video series** (Microsoft Developer YouTube)
+- **VS Code website** for MCP server exploration
+- **Azure AI Foundry Discord** for community support
+
+---
+
+## Anthropic Perspective & Roadmap
+
+### Drew Hoden (Anthropic Platform AI Engineering)
+
+#### Industry Adoption
+- **Rapid adoption** across the LLM application ecosystem
+- **Open-source protocol** foundation for the GenAI era
+- **Active collaboration** with Microsoft teams
+
+#### Recent Protocol Updates (June 18th Release)
+
+**Elicitation**
+- Servers can **request additional user input**
+- Enables more **agentic workflows**
+- Tools can accomplish more with incomplete information
+
+**Enhanced Features**
+- **Structured outputs** support
+- **Resource links** in tool responses  
+- **Mandatory resource indicators** (security)
+- **OAuth 2.1** resource server support
+- **Protocol version negotiation**
+
+#### Upcoming Features
+
+**Agentic Capabilities**
+- **Asynchronous operations** for long-running tasks
+- **Task delegation** and progress polling
+- **Reconnection handling**
+
+**Security Enhancements**
+- **Fine-grain authorization**
+- **Single sign-on** integration
+- **Enterprise-grade** security guides
+
+**Protocol Improvements**
+- **Validation tools** for production quality
+- **Meta registry API** (publish once, consume everywhere)
+- **Multimodality support** (video, streaming responses)
+
+#### MCP Authoring Patterns
+
+**First-Party Control Scenarios:**
+1. **MCP Server Author** - Control tools, not prompting context
+2. **Full Application Owner** - Control both tools and prompting
+3. **Hybrid Scenarios** - Partial control considerations
+
+#### Production Deployment Considerations
+
+**Internal Deployments**
+- **Developer velocity** focus
+- **Security requirements**
+- **Containerization strategies**
+- **Monorepo vs. distributed** approaches
+
+**External Deployments**
+- **API serving best practices**
+- **Stateful vs. stateless** considerations
+- **Rate limiting and redundancy**
+- **Tool parameter protections**
+
+---
+
+## Q&A Session Highlights
+
+### Push Notifications
+- **Stateful MCP mode** supports resource notifications
+- **Asynchronous tasks API** will enhance this capability
+- Application-dependent display implementation
+
+### Tool Management
+- **Semantic naming** crucial (e.g., "github_search" vs. "search")
+- **Descriptive tool names** prevent conflicts
+- **User coaching** and tool toggling strategies
+- **Advanced techniques**: prefill, RAG over tools
+
+---
+
+## Key Takeaways
+
+### For Developers
+1. **Start with VS Code** MCP integration for immediate productivity
+2. **Explore curated servers** before building custom solutions
+3. **Consider security** and enterprise requirements early
+4. **Use semantic naming** for tools to avoid conflicts
+
+### For Organizations
+1. **Private registries** available via Azure API Center
+2. **Enterprise security** built into Windows MCP integration  
+3. **Multi-platform deployment** strategies supported
+4. **Community collaboration** through steering committee
+
+### Getting Involved
+- **Documentation**: Official MCP docs
+- **Contribute**: GitHub repositories for protocol and SDKs
+- **Registry**: Anthropic Cloud Connectors as reference implementation
+- **Community**: Active collaboration opportunities
+
+---
+
+## Resources
+- **Microsoft Developer YouTube**: Beginner video series
+- **VS Code MCP**: Server exploration and setup
+- **Azure AI Foundry Discord**: Community support
+- **GitHub**: MCP protocol and SDK contributions
+- **mcp.azure.com**: Enterprise registry solutions
 <img width="711" height="281" alt="image" src="https://github.com/user-attachments/assets/8e78a004-65ba-4911-a8cc-47919da3ba34" />
 <img width="573" height="352" alt="image" src="https://github.com/user-attachments/assets/d7ee0664-326b-4bd2-9021-beda7d7a96d2" />
 
