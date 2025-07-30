@@ -477,6 +477,8 @@ https://github.com/nlweb-ai/NLWeb
 <img width="703" height="385" alt="image" src="https://github.com/user-attachments/assets/d901cd26-3937-467f-80b7-c8e226a0af28" />
 <img width="694" height="393" alt="image" src="https://github.com/user-attachments/assets/cdd71db2-16b4-4dd9-bfa1-b5e30963cd6c" />
 <img width="714" height="393" alt="image" src="https://github.com/user-attachments/assets/4808f0f0-d665-4f8f-887e-bf89ab42b5ff" />
+
+new
 <img width="701" height="393" alt="image" src="https://github.com/user-attachments/assets/2882131c-b984-4be3-b8b0-d71eb4b2788c" />
 <img width="699" height="400" alt="image" src="https://github.com/user-attachments/assets/5cbf7d2c-03e1-42e5-ac15-059d21abe0c4" />
 <img width="697" height="383" alt="image" src="https://github.com/user-attachments/assets/9f2b2012-9211-44d1-945d-48232465c5d2" />
